@@ -1,0 +1,175 @@
+    *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+/*    border: 1px solid;*/
+    font-family: calibri;
+}
+
+.btn-color{
+    background: #304f84; /*Navigation Bar*/
+    background: #1e90ff; /*Dodger Blue*/
+    background: #f84f74; /*Pink Color*/
+    
+    color: #797b74; /*Seller Name*/
+    color: #616161; /*Prices | Otherwise*/ 
+    color: #a1a1a1; /*Description*/
+}
+
+.row{
+    margin: 20px 0;
+}
+/*Desiging Main Header*/
+/*Bootstrap Design overwrite*/
+.navbar{
+    padding: 6px 12px;
+    background: #304f84;
+}
+
+.navbar-brand{
+    font-weight: 900;
+    font-size: 20px;
+}
+
+.form-inline .form-control{
+    width: 250px;
+    padding: 4px 12px;
+}
+
+.btn{
+    padding: 4px 12px;
+    margin: 0 5px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+
+/* Navigation Bar of Categories 
+on 09/08/2018 12:00 hours*/
+.navigation{
+    background-color: white;
+    color: black;
+    font-size: 16px;
+    margin-bottom: 10px;
+    box-shadow: 2px 2px 5px #aaa;
+}
+
+.navigation ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 18px;
+}
+
+.navigation ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+.navigation li span#locate-me{
+    margin-left: 5px;
+    background-color: #304f84;
+    color: white;
+    padding: 2px 6px;
+    border-radius: 10px;
+}
+
+.navigation ul li a:hover{
+    /*Not Coded yet!*/
+}
+/* -----End of Navigation----- 
+on 09/08/2018 13:00 hours*/
+
+
+/* Product Image and Container*/
+.product-image{
+    /*Product-Image container width*/
+    width: 130px;
+    height: auto;
+    margin: 0 auto;
+} 
+
+img{
+    width: 100%;
+    height: auto;
+}
+
+.product-image img:hover{
+    transition: transform 0.2s;
+/*    transform: scale(1.3);    */
+}
+
+/*Product & Product Details.*/
+
+.product-about #product-name{
+    color: dodgerblue;
+    margin: 10px 0 0;
+    font-size: 20px;
+}
+
+.product-about #seller-name{
+    margin: 5px 0;
+    font-size: 16px;
+    color: #797b74;
+    font-weight: 400;
+}
+
+.product-about #mrp{
+    text-decoration: line-through;
+}
+
+.product-about #mrp, #price{
+    margin: 5px 0;
+    font-size: 14px;
+    color: #616161; 
+}
+
+.product-about #product-description{
+    color: #a1a1a1;
+}
+/*----End of Products----
+ 09/08/2018 15:00 Hours */
+
+
+/*Add to Cart and BuyNow*/
+.addCart-buyNow{
+    padding: 15px;
+    border: 1px solid #a1a1a1;
+}
+.buttons{
+    text-align: center;
+}
+
+.btns{
+    border: none;
+    outline: none;
+    background-color: dodgerblue;
+    color: white;
+    font-size: 16px;
+    width: 120px;
+    padding: 4px 14px;
+    margin: 10px 0;
+}
+
+.addCart-buyNow #delivery{
+    margin: 5px 0;
+}
+.addCart-buyNow #message-about-delivery{
+    margin: 10px 0 30px;
+    color:#797b74;
+}
+
+@media(max-width:768px){
+    .col-md-3, .col-md-5{
+        margin-bottom: 10px;
+    }
+    
+    .col-md-4{
+        margin: 20px 0;
+    }
+    
+    .addCart-buyNow{
+        background: #eee;
+        border: 0;
+    }
+    
+}

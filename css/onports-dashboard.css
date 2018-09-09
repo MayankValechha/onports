@@ -1,0 +1,66 @@
+/* For sidebar link .collapsible-sidebar */
+.col-md-3, .col-md-9{
+    padding:0;
+}
+.collapsible-sidebar{
+    height: 100%;
+    background: #304f84;
+}
+
+ul{
+    padding: 0;
+}
+
+ul li{
+    list-style: none;
+    padding: 10px 0;
+    overflow: hidden;
+    text-align: center;
+}
+
+ul#side-links li a{
+    text-decoration: none;
+    color:#fff;
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+ul#side-links li a:hover{
+    text-decoration: none;
+    color: white;
+}
+
+ul#side-links li:hover{
+    text-decoration: none;
+    color:#fff;
+    background: #f84f74; /*Pink Color*/
+}
+
+/* Main Area  */
+.dashboard-navigation{
+    background: #304f84;
+}
+
+.product-description-outer{
+    margin:15px;
+}
+
+.product-description{
+    padding: 10px;
+    box-shadow: 0 0 5px #ccc;;
+    margin: 15px 0;
+}
+
+
+
+/* Buttons */
+.btn{
+    width: 130px;
+    color:white;
+}
+.btn-red{
+    background:#dc3545;
+}
+.btn-pink{
+    background: #f84f74;
+}
