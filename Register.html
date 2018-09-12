@@ -21,32 +21,42 @@
             <div class="col-md-6 container-form">
                 <h3>Register</h3>
                 <h6>Already a Customer? <span class="main-color"><a href="#">Login now.</a></span></h6>
-                <form action="#">
+                
+                <form action="#" id="RegisterForm">
                     <div class="form-group">
-                        <input type="text" class="form-control" placeholder="First Name*">
+                        <input type="text" class="form-control" id="fName" placeholder="First Name">
                     </div>
+                    
                     <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Last Name*">
+                        <input type="text" class="form-control" id="lName" placeholder="Last Name">
                     </div>
+                    
                     <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Mobile Number*">
+                        <input type="text" class="form-control" id="moNum" placeholder="Mobile Number">
                     </div>
+                    
                     <div class="form-group">
-                        <input type="password" class="form-control" placeholder="Password*">
+                        <input type="password" class="form-control" id="pass" placeholder="Password">
                     </div>
+                    
                     <div class="form-group">
-                        <input type="password" class="form-control" placeholder="Confirm Password*">
+                        <input type="password" class="form-control" id="conPass" placeholder="Confirm Password">
                     </div>
+                    
                     <div class="form-group">
-                        <input type="email" class="form-control" placeholder="Email address">
+                        <input type="email" class="form-control" id="email" placeholder="Email address">
                     </div>
+                    
                     <div class="form-group">
-                        <label><input type="checkbox"> I have read and agree <span class="main-color"><a href="#">Terms of Use</a></span> and <span class="main-color"><a href="#">Privacy Policy</a></span>.</label>
+                        <label><input type="checkbox" id="terms-and-condition"> I have read and agree <span class="main-color"><a href="#">Terms of Use</a></span> and <span class="main-color"><a href="#">Privacy Policy</a></span>.</label>
                     </div>
-                    <button class="btn button main-bg-color">Register</button>
+                    <input type="submit" id="submitBtn" class="btn button main-bg-color" value="Register">
                 </form>
+                
             </div>
         </div>
     </div>
+    <script src="js/app.js"></script>
+<!--    <script src="js/parse.js"></script>-->
 </body>
 </html>
