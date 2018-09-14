@@ -8,6 +8,7 @@
    	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
    	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
+   	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
     <!--BOOTSTRAP CSS-->
     <link rel="stylesheet" href="css/bootstrap-grid.css">
@@ -16,83 +17,85 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/bootstrap-reboot.css">
     <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
-    <link rel="stylesheet" href="css/onports-custom.css">
+	<link rel="stylesheet" href="css/onports-custom.css">
+
     
-
-    <title>Product Description | onports</title>
+	<!--OWL CAROUSEL-->
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/owl.theme.default.min.css">
+   
+    <title>Homepage | onports</title>
 </head>
+<style>
 
+</style>
 <body>
-<!--Main Navigation-->
-    <nav class="navbar navbar-expand-lg navbar-dark">
-        <a class="navbar-brand" href="javascript:void(0)">onports</a>
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navb">
-            <span class="navbar-toggler-icon"></span>
-        </button>
 
-        <div class="collapse navbar-collapse" id="navb">
-            <ul class="navbar-nav mr-auto"> </ul>
-            <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="text" placeholder="Search in onports!">
-                <button class="btn my-2 my-sm-0" type="button">Login</button>
-                <button class="btn my-2 my-sm-0" type="button">Register</button>
-            </form>
-        </div>
-    </nav>
+
+<!--Main Navigation-->
+	<nav class="navbar navbar-expand-md navbar-light">
+  		<a class="navbar-brand" href="#">onports</a>
+  		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#CollapsedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    	<span class="navbar-toggler-icon"></span>
+ 		</button>
+
+	  	<div class="collapse navbar-collapse" id="CollapsedContent">
+			<ul class="navbar-nav ml-auto">
+				<form class="form-inline my-2 my-lg-0">
+					<input class="form-control mr-sm-2" type="search" placeholder="Search anything in onports!" aria-label="Search">
+					<button class="btn my-2 my-sm-0" type="submit">Login</button>
+					<button class="btn my-2 my-sm-0" type="submit">Register</button>
+				</form>
+			</ul>
+	  	</div>
+	</nav>
+
 
 <!--Categories Navigation-->
-    <div class="navigation">
-        <ul>
-            <li><a href="">Where to Deliver?</a> <span id="locate-me">Locate Me</span></li>
-            <li><a href="">General Stores</a></li>
-            <li><a href="">Clothing</a></li>
-            <li><a href="">Electronics</a></li>
-            <li><a href="">Food</a></li>
-            <li><a href="">Lifestyle</a></li>
-        </ul>
-    </div>
-    
-    <div class="container">
-        <h4 class="heading-title">Find Shops Near You!</h4>
-        <div class="row">
-            <div class="col-md-3">
-                <div class="shop">
-                    <img src="img/Shop.PNG" alt="Shop Image">
-                    <p>Shop Name</p>
-                    <button class="btn-shop">Shop Now</button>
-                </div>
-            </div>
-            
-            <div class="col-md-3">
-                <div class="shop">
-                    <img src="img/Shop.PNG" alt="Shop Image">
-                    <p>Shop Name</p>
-                    <button class="btn-shop">Shop Now</button>
-                </div>
-            </div>
-            
-            <div class="col-md-3">
-                <div class="shop">
-                    <img src="img/Shop.PNG" alt="Shop Image">
-                    <p>Shop Name</p>
-                    <button class="btn-shop">Shop Now</button>
-                </div>
-            </div>
-            
-            <div class="col-md-3">
-                <div class="shop">
-                    <img src="img/Shop.PNG" alt="Shop Image">
-                    <p>Shop Name</p>
-                    <button class="btn-shop">Shop Now</button>
-                </div>
-            </div>
-        </div>
-    </div>
+    <nav class="nav">
+		<a class="nav-link" href="#">Where to Deliver?<span id="locate-me">Locate Me</span></a> 
+        <a class="nav-link" href="#">General Stores</a>
+        <a class="nav-link" href="#">Clothing</a></li>
+        <a class="nav-link" href="#">Electronics</a>
+        <a class="nav-link" href="#">Food</a></li>
+        <a class="nav-link" href="#">Lifestyle</a>
+    </nav>
         
-    <hr>
-    
     <div class="container">
-        <h4 class="heading-title">Today's Deal</h4>
+    	<div class="row">
+    	<h4 class="heading-title">Find Shops near you!</h4>
+    		<div class="owl-carousel">
+    			<div class="shop">
+    				<img src="img/Shop.PNG" alt="Shop Image">
+                    <p>Shop Name</p>
+                    <button class="btn-shop">Shop Now</button>
+    			</div>
+    			<div class="shop">
+    				<img src="img/Shop.PNG" alt="Shop Image">
+                    <p>Shop Name</p>
+                    <button class="btn-shop">Shop Now</button>
+    			</div>
+    			<div class="shop">
+    				<img src="img/Shop.PNG" alt="Shop Image">
+                    <p>Shop Name</p>
+                    <button class="btn-shop">Shop Now</button>
+    			</div>
+    			<div class="shop">
+    				<img src="img/Shop.PNG" alt="Shop Image">
+                    <p>Shop Name</p>
+                    <button class="btn-shop">Shop Now</button>
+    			</div>
+    			<div class="shop">
+    				<img src="img/Shop.PNG" alt="Shop Image">
+                    <p>Shop Name</p>
+                    <button class="btn-shop">Shop Now</button>
+    			</div>
+    		</div>
+    	</div>
+    </div>
+            
+    <div class="container">
+        <h4 class="heading-title" >Today's Deal</h4>
         <div class="row">
             <div class="col-md-6">
                 <div class="row">
@@ -117,5 +120,16 @@
             </div>
         </div>              
     </div>    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script><script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+	<!--OWL CAROUSEL-->
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/owl-carousel-custom.js"></script>
+    
+    <script>
+		$(document).ready(function(){
+			$(".owl-carousel").owlCarousel();
+		});
+	</script>
 </body>
 </html>
