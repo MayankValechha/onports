@@ -1,4 +1,4 @@
-    *{
+ *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -24,11 +24,19 @@
 .navbar{
     padding: 6px 12px;
     background: #304f84;
+	color: white;
 }
 
-.navbar-brand{
+.navbar-light .navbar-brand{
     font-weight: 900;
     font-size: 20px;
+	color: white;
+}
+
+.navbar-light .navbar-brand:hover{
+    font-weight: 900;
+    font-size: 20px;
+	color: white;
 }
 
 .form-inline .form-control{
@@ -43,9 +51,9 @@
     border-radius: 10px;
 }
 
-
 /* Navigation Bar of Categories 
 on 09/08/2018 12:00 hours*/
+/*
 .navigation{
     background-color: white;
     color: black;
@@ -66,6 +74,34 @@ on 09/08/2018 12:00 hours*/
 }
 
 .navigation li span#locate-me{
+    margin-left: 5px;
+    background-color: #304f84;
+    color: white;
+    padding: 2px 6px;
+    border-radius: 10px;
+}
+*/
+
+.nav{
+    background-color: white;
+    color: black;
+    font-size: 16px;
+    margin-bottom: 10px;
+    box-shadow: 2px 2px 5px #aaa;
+}
+
+.nav a{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 18px;
+}
+
+.nav a{
+    text-decoration: none;
+    color: black;
+}
+
+.nav span#locate-me{
     margin-left: 5px;
     background-color: #304f84;
     color: white;
