@@ -8,7 +8,7 @@
     background-color: dodgerblue;
 }
 
-.button{
+input.button{
     color:white;
     width: 90px;
     border-radius: 25px;
@@ -18,7 +18,7 @@
     padding: 10px 0;
 }
 
-.container-form{
+.container .container-form{
     padding: 20px;
     margin: 20px;
     border:1px solid #e1e1e1;
@@ -32,9 +32,10 @@
 .form-group .form-control{
     margin-bottom: 16px;
     padding: 4px 12px;
+	border-radius: 10px;
 }
 
-h3, h6{
+.container-form h3, h6{
     margin-bottom: 16px;
 }
 
@@ -48,4 +49,12 @@ a[href]:hover{
 
 label{
     margin-bottom: 0;
+}
+
+@media (max-width:600px){
+	.container .container-form{
+		box-shadow: none;
+		border:none;
+		margin: auto;
+	}
 }
