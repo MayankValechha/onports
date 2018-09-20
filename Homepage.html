@@ -7,32 +7,23 @@
 	<!--BOOTSTRAP CDN-->
    	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
    	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
    	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
-    <!--BOOTSTRAP CSS-->
-    <link rel="stylesheet" href="css/bootstrap-grid.css">
-    <link rel="stylesheet" href="css/bootstrap-grid.min.css">
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/bootstrap-reboot.css">
-    <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
+    <!--PARSE SDK-->
+    <script src="https://unpkg.com/parse/dist/parse.min.js"></script>
+    
+    <!--CUSTOM STYLESHEET-->
 	<link rel="stylesheet" href="css/onports-custom.css">
 
-    
 	<!--OWL CAROUSEL-->
 	<link rel="stylesheet" href="css/owl.carousel.min.css">
 	<link rel="stylesheet" href="css/owl.theme.default.min.css">
    
     <title>Homepage | onports</title>
 </head>
-<style>
 
-</style>
 <body>
-
-
-<!--Main Navigation-->
+    <!--Main Navigation-->
 	<nav class="navbar navbar-expand-md navbar-light">
   		<a class="navbar-brand" href="#">onports</a>
   		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#CollapsedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -51,85 +42,123 @@
 	</nav>
 
 
-<!--Categories Navigation-->
+    <!--Categories Navigation-->
     <nav class="nav">
 		<a class="nav-link" href="#">Where to Deliver?<span id="locate-me">Locate Me</span></a> 
         <a class="nav-link" href="#">General Stores</a>
-        <a class="nav-link" href="#">Clothing</a></li>
+        <a class="nav-link" href="#">Clothing</a>
         <a class="nav-link" href="#">Electronics</a>
-        <a class="nav-link" href="#">Food</a></li>
+        <a class="nav-link" href="#">Food</a>
         <a class="nav-link" href="#">Lifestyle</a>
     </nav>
         
-    <div class="container">
-    	<div class="row">
-    	<h4 class="heading-title">Find Shops near you!</h4>
-    		<div class="owl-carousel">
-    			<div class="shop">
-    				<img src="img/Shop.PNG" alt="Shop Image">
-                    <p>Shop Name</p>
-                    <button class="btn-shop">Shop Now</button>
-    			</div>
-    			<div class="shop">
-    				<img src="img/Shop.PNG" alt="Shop Image">
-                    <p>Shop Name</p>
-                    <button class="btn-shop">Shop Now</button>
-    			</div>
-    			<div class="shop">
-    				<img src="img/Shop.PNG" alt="Shop Image">
-                    <p>Shop Name</p>
-                    <button class="btn-shop">Shop Now</button>
-    			</div>
-    			<div class="shop">
-    				<img src="img/Shop.PNG" alt="Shop Image">
-                    <p>Shop Name</p>
-                    <button class="btn-shop">Shop Now</button>
-    			</div>
-    			<div class="shop">
-    				<img src="img/Shop.PNG" alt="Shop Image">
-                    <p>Shop Name</p>
-                    <button class="btn-shop">Shop Now</button>
-    			</div>
-    		</div>
-    	</div>
+        
+    <!--Advertisement Carousel-->
+    <div id="newOffersAdvertisement">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="owl-carousel owl-theme" id="newOffersAd">
+                    <!--Offers Advertisement Here!-->
+                </div>
+            </div>
+        </div>
     </div>
-            
-    <div class="container">
-        <h4 class="heading-title" >Today's Deal</h4>
-        <div class="row">
-            <div class="col-md-6">
-                <div class="row">
-                    <div class="col-md-3">
-                        <h3>Headphones under Rs 1000</h3>
-                    </div>
-                    <div class="col-md-3">
-                        <img src="img/Product%201.PNG" alt="">
-                    </div>
+     
+     
+    <!--Shops Carousel-->
+    <div id="findShopsNearYou">
+        <div class="container-fluid">
+            <div class="row">
+               <h3 class="heading">Find Shops Near You.</h3>
+                <div class="owl-carousel owl-theme shops" id="findShops">
+                    <!--Find Shops Near You-->
                 </div>
             </div>
-             
-            <div class="col-md-6">
-                <div class="row">
-                    <div class="col-md-3">
-                        <h3>Headphones under Rs 1000</h3>
-                    </div>
-                    <div class="col-md-3">
-                        <img src="img/Product%201.PNG" alt="">
-                    </div>
-                </div>
-            </div>
-        </div>              
-    </div>    
+        </div>
+    </div>
+    
+    <hr class="divider">
+    
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script><script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 	<!--OWL CAROUSEL-->
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/owl-carousel-custom.js"></script>
-    
+    <script src="js/owl.carousel.min.js"></script>    
     <script>
-		$(document).ready(function(){
-			$(".owl-carousel").owlCarousel();
+        let newOffersAds = $('#newOffersAd').owlCarousel({
+            loop:true,
+            margin:10,
+            navigation:true,
+            singleItem:true,
+            responsive:{
+                0:{
+                    items:1
+                },
+                600:{
+                    items:1
+                },
+                1000:{
+                    items:1
+                }
+            }
+        });
+        
+        let findByShops = $('#findShops').owlCarousel({
+            loop:true,
+            margin:10,
+            navigation:true,
+            singleItem:true,
+            responsive:{
+                350:{
+                    items:1
+                },
+                400:{
+                    items:2
+                },
+                700:{
+                    items:3
+                },
+                800:{
+                    items:3
+                },
+                1000:{
+                    items:4
+                },
+                1100:{
+                    items:5
+                }
+            }
+        });
+        
+		Parse.initialize("PgKKTeokkD5m9RwFUsdumjY4nik1KnYDtkW5LwGI", "rdCO861N9xGCA7N2waGl1yzShT8XvHTRGHimBfYz"); 
+		Parse.serverURL = "https://parseapi.back4app.com/";
+		
+		var findOffers = new Parse.Query('Offers');
+		findOffers.find().then(function(result){		
+				
+            for(let i= 0; i < result.length; i++){
+                let offerImg = result[i].get("offerImage").url();
+                newOffersAds.trigger('add.owl.carousel','<div class="item"><img src="'+offerImg+'"></div>');	
+                newOffersAds.trigger('refresh.owl.carousel');
+            }
 		});
-	</script>
+        
+        var findShops = new Parse.Query('Shops');
+        findShops.find().then(function(result){		
+
+            for(let i= 0; i < result.length; i++){
+                let shopImage = result[i].get('shopImage').url();
+                let shopName = result[i].get('shopName');
+                let shopAdd = result[i].get('shopAddress');
+                console.log('SHOP : '+shopName);
+                findByShops.trigger('add.owl.carousel',
+                                    '<div class="shop">'+
+                                    '<img src="'+shopImage+'">'+
+                                    '<h5 class="shop-name">'+shopName+'</h5>'+
+                                    '<h6 class="shop-add">'+shopAdd+'</h6>'+
+                                    '</div>');	
+                findByShops.trigger('refresh.owl.carousel');
+            }
+        });
+    </script>
 </body>
 </html>
