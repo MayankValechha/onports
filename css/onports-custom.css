@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-/*    border: 1px solid;*/
     font-family: calibri;
 }
 
@@ -19,6 +18,8 @@
 .row{
     margin: 20px 0;
 }
+
+
 /*Desiging Main Header*/
 /*Bootstrap Design overwrite*/
 .navbar{
@@ -51,37 +52,9 @@
     border-radius: 10px;
 }
 
+
 /* Navigation Bar of Categories 
 on 09/08/2018 12:00 hours*/
-/*
-.navigation{
-    background-color: white;
-    color: black;
-    font-size: 16px;
-    margin-bottom: 10px;
-    box-shadow: 2px 2px 5px #aaa;
-}
-
-.navigation ul li{
-    list-style: none;
-    display: inline-block;
-    padding: 8px 18px;
-}
-
-.navigation ul li a{
-    text-decoration: none;
-    color: black;
-}
-
-.navigation li span#locate-me{
-    margin-left: 5px;
-    background-color: #304f84;
-    color: white;
-    padding: 2px 6px;
-    border-radius: 10px;
-}
-*/
-
 .nav{
     background-color: white;
     color: black;
@@ -194,18 +167,36 @@ img{
     color:#797b74;
 }
 
-@media(max-width:768px){
-    .col-md-3, .col-md-5{
-        margin-bottom: 10px;
-    }
-    
-    .col-md-4{
-        margin: 20px 0;
-    }
-    
-    .addCart-buyNow{
-        background: #eee;
-        border: 0;
-    }
-    
+/*HOMEPAGE COMPONENTS STYLING*/
+
+/*Dynamic Loaded Shops*/
+.shop{
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.shop img{
+    width: 100%;
+    height: 220px;
+}
+
+h5.shop-name{
+    padding: 5px 0;
+    font-weight: 400;
+    font-size: x-large;
+    margin-bottom: 0;
+}
+
+#findShopsNearYou .heading{
+    font-size: 24px;
+    padding: 10px 0;
+    text-align: center;
+    font-weight: 500;
+}
+
+hr{
+    width: 80%;
+    margin: auto;
+    border: 1px solid #ddd;
 }
