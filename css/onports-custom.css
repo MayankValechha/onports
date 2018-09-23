@@ -170,6 +170,9 @@ img{
 /*HOMEPAGE COMPONENTS STYLING*/
 
 /*Dynamic Loaded Shops*/
+.owl-carousel .owl-item .active{
+    width: 240px;
+}
 .shop{
     border: 1px solid #ddd;
     border-radius: 10px;
@@ -188,10 +191,9 @@ h5.shop-name{
     margin-bottom: 0;
 }
 
-#findShopsNearYou .heading{
+.heading{
     font-size: 24px;
     padding: 10px 0;
-    text-align: center;
     font-weight: 500;
 }
 
@@ -199,4 +201,44 @@ hr{
     width: 80%;
     margin: auto;
     border: 1px solid #ddd;
+}
+
+/*Dynamic Loaded Latest Poducts*/
+.product-wrapper{
+    width: 200px;
+    padding: 5px 10px;
+}
+.product-image{
+    max-width: 100%;
+}
+
+.product-image-inside{
+    width: auto;
+    height: auto;
+    margin: 0 auto;
+}
+
+.product-name{
+    font-size: 16px;
+    font-weight: 500;
+    text-align: left;
+}
+.product-price-box{
+    font-size: 16px;
+}
+
+.product-mrp-tag{
+    font-weight: 600;
+    padding: 0 2px;
+}
+
+.product-market-price{
+    text-decoration:line-through;
+    color: #505050;
+    padding: 0 2px;
+}
+
+.product-onports-price{
+    font-weight: 600;
+    padding: 0 2px;
 }
