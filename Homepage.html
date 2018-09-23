@@ -68,16 +68,27 @@
     <!--Shops Carousel-->
     <div id="findShopsNearYou">
         <div class="container-fluid">
+            <h3 class="heading">Find Shops Near You.</h3>
             <div class="row">
-               <h3 class="heading">Find Shops Near You.</h3>
-                <div class="owl-carousel owl-theme shops" id="findShops">
+                <div class="owl-carousel owl-theme" id="findShops">
                     <!--Find Shops Near You-->
                 </div>
             </div>
         </div>
     </div>
     
+    <br>
     <hr class="divider">
+    <br>
+    
+    <!--Latest Products-->
+    <div id="latestProducts">
+        <div class="container-fluid">
+            <h3 class="heading">Latest Products</h3>
+            <div class="row" id="productContainer">
+            </div>
+        </div>
+    </div>
     
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script><script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
@@ -87,6 +98,7 @@
         let newOffersAds = $('#newOffersAd').owlCarousel({
             loop:true,
             margin:10,
+            autoplay:true,
             navigation:true,
             singleItem:true,
             responsive:{
@@ -104,7 +116,8 @@
         
         let findByShops = $('#findShops').owlCarousel({
             loop:true,
-            margin:10,
+            margin:-40,
+            autoWidth:false,
             navigation:true,
             singleItem:true,
             responsive:{
@@ -149,15 +162,48 @@
                 let shopImage = result[i].get('shopImage').url();
                 let shopName = result[i].get('shopName');
                 let shopAdd = result[i].get('shopAddress');
-                console.log('SHOP : '+shopName);
+                
                 findByShops.trigger('add.owl.carousel',
-                                    '<div class="shop">'+
+                                    '<div class="shop" style="width: 240px; margin-right: 10px;">'+
                                     '<img src="'+shopImage+'">'+
                                     '<h5 class="shop-name">'+shopName+'</h5>'+
                                     '<h6 class="shop-add">'+shopAdd+'</h6>'+
                                     '</div>');	
                 findByShops.trigger('refresh.owl.carousel');
             }
+        });
+        
+        let productContainer = document.getElementById('productContainer');
+        let output = '';
+        let latestProducts = new Parse.Query('Products');
+        latestProducts.find().then(function(result){
+            
+            for(let i in result){
+                let productImage = result[i].get('productImage').url();
+                let productName = result[i].get('productName');
+                let productMRP = result[i].get('productMRP');
+                let productOurPrice = result[i].get('productOnportsPrice');
+                                
+                output += `
+                        <div class="col-6 col-sm-6 col-md-3 col-lg-3 col-xl-2">
+                            <div class="product-wrapper">
+                                <div class="product-image">
+                                    <a href="#"><img class="product-image-inside" src="${productImage}" alt="Product Image"></a>
+                                </div>  
+                                <div class="product-name">
+                                    <h6 class="product-name">${productName}</h6>
+                                </div>
+                                <div class="product-price-box">
+                                    <span class="product-mrp-tag">MRP</span>
+                                    <span class="product-market-price">₹${productMRP}</span>
+                                    <span class="product-onports-price">₹${productOurPrice}</span> 
+                                </div>
+                            </div>
+                        </div>
+                    `;
+                        
+            }
+            productContainer.innerHTML = output;
         });
     </script>
 </body>
