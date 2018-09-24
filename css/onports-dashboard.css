@@ -1,17 +1,101 @@
-/* For sidebar link .collapsible-sidebar */
-.col-md-3, .col-md-9{
-    padding:0;
-}
-.collapsible-sidebar{
-    height: 100%;
-    background: #304f84;
+body{
+    overflow-y: hidden;
 }
 
-ul{
+/*MAIN TOP NAVIGATION BAR*/
+
+.navbar-expand-sm{
+    padding-left: 0
+}
+
+a.navbar-brand{
+    color: white;
+    font-size: 24px;
+    letter-spacing: 1px;
+    text-align: center;
+    padding-left:0;
+    margin-right: 0;
+    overflow: visible;
+
+}
+
+a.nav-link{
+    color: white;
+    font-size: 18px;
+    line-height: 34px;    
+}
+
+#mobileNavbar{
+    display: none;
+}
+
+#mobileNavbar a{
+    text-align: center;
+}
+
+#mobileNavbar a:hover{
+    border-bottom: 5px solid #f84f74;
+}
+
+.user img{
+    width: 50px;
+    height: 50px;
+    vertical-align: middle;
+}
+
+.user h6{
+    display: inline-block;
+    vertical-align: middle;
+    color: white;
+    padding: 0 0 0 10px;
+}
+
+#userMobile{
+    display: none;
+}
+
+.sidebar{
+    height: 100%;
+}
+
+/*MEDIA QUERY FOR HIDING DESKTOP NAVS AND SHOWING OF MOBILE'S NAV*/
+
+@media(max-width:768px){
+    a.navbar-brand{
+        padding-left: 10px;
+    }
+    ul.navbar-nav{
+        display: none;
+    }
+    
+    #mobileNavbar{
+        display: block;
+    }
+    
+    #userMobile{
+        display: block;
+    }
+    
+    .user h6{
+        display: none;
+    }
+    
+    .col-md-2{
+        display: none;
+    }
+    
+    .col-md-2 .sidebar{
+        display: none;
+        visibility: hidden
+    }
+}
+
+/*SIDEBAR WHICH WILL HIDE ON SMALL SCREENS*/
+ul#side-links{
     padding: 0;
 }
 
-ul li{
+ul#side-links li{
     list-style: none;
     padding: 10px 0;
     overflow: hidden;
@@ -33,12 +117,16 @@ ul#side-links li a:hover{
 ul#side-links li:hover{
     text-decoration: none;
     color:#fff;
-    background: #f84f74; /*Pink Color*/
+    background: #f84f74;
 }
 
-/* Main Area  */
-.dashboard-navigation{
-    background: #304f84;
+/*MAIN AREA AND SIDEBAR*/
+.col-md-2,.col-md-10{
+    padding: 0;
+}
+
+.col-md-2{
+    height: 100vh;
 }
 
 .product-description-outer{
@@ -51,16 +139,21 @@ ul#side-links li:hover{
     margin: 15px 0;
 }
 
-
-
-/* Buttons */
+/* BUTTONS AND COLORS */
 .btn{
     width: 130px;
     color:white;
 }
+
 .btn-red{
     background:#dc3545;
 }
+
 .btn-pink{
     background: #f84f74;
 }
+
+.bg-blue{
+    background: #304f84;
+}
+
