@@ -2,26 +2,63 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Dashboard | onports</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Dashboard</title>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+   	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-    <!--BOOTSTRAP CSS-->
-    <link rel="stylesheet" href="css/bootstrap-grid.css">
-    <link rel="stylesheet" href="css/bootstrap-grid.min.css">
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/bootstrap-reboot.css">
-    <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
-    <link rel="stylesheet" href="css/onports-dashboard.css">
-
+   	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+   	<link rel="stylesheet" href="css/onports-dashboard.css">
 </head>
+
 <body>
+    <!--MAIN TOP NAVIGATION BAR-->
+    <nav class="navbar navbar-expand-sm bg-blue">
+        <a href="#" class="navbar-brand col-2">onports</a>
+    
+       <!--THIS WILL NOT DISPLAY ON SMALL SCREEN : USER IMAGE AND NAME-->
+        <ul id="userDesktop" class="navbar-nav col-sm-10">
+            <li class="nav-item">
+                <a class="nav-link" href="#">Dashboard</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Profile</a>
+            </li>
+            <li class="user ml-auto">
+                <img src="img/User.png" alt="User Profile">
+                <h6>Hello, Mayank!</h6>
+            </li>
+        </ul>
+        
+        <!--THIS WILL DISPLAY ON MOBILE SCREEN : USER IMAGE AND NAME-->
+        <div id="userMobile" class="user ml-auto">
+            <img src="img/User.png" alt="User Profile">
+            <h6>Hello, Mayank!</h6>
+        </div>
+    </nav>
+    
+    <!--MOBILE NAVIGATION BAR WHICH HIDES ON DESKTOP SCREEN OR WIDTH > 720px-->
+    <div id="mobileNavbar">
+        <div class="container-fluid bg-blue">
+            <div class="row">
+                <div class="col-6">
+                    <a class="nav-link" href="#">Dashboard</a>
+                </div>
+                <div class="col-6">
+                    <a class="nav-link" href="#">Profile</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
     <div class="container-fluid">
         <div class="row">
-            <div class="col-md-3">
-                <div class="collapsible-sidebar">
-                    <ul>
+           
+            <!--IT WILL HIDE ON SMALL SCREEN-->
+            <div class="col-md-2 mh-100">
+                <div class="sidebar bg-blue">
+                    <ul id="side-links">
                         <li><a href="#">Overview</a></li>
                         <li><a href="#">Products</a></li>
                         <li><a href="#">Offers</a></li>
@@ -29,14 +66,12 @@
                     </ul>
                 </div>
             </div>
-
-            <div class="col-md-9">
-                <div class="main-area">
+            
+            <div class="col-md-10">
+                <div class="product-description-outer">
                     <h5 class="">Product Details</h5>
                     <button id="delete-product" class="btn btn-red">Delete Product</button>
-
-                    <div class="clearfix"></div>
-
+                    
                     <div class="product-description">
                         <div class="container-fluid">
                             <div class="row">
@@ -45,7 +80,7 @@
                                         <img src="#" alt="Product Preview" id="product-image">
                                     </div>
                                 </div>
-                    
+                                
                                 <div class="col-md-6">
                                     <h5 id="product-name" contenteditable="true">Product Name</h5>
                                     <h6 id="product-mrp" contenteditable="true">MRP Rs 200</h6>
